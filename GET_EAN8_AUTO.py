@@ -10,7 +10,7 @@ def get_ean_auto():
     n_7 = random.randint(0, 9)
 
     # собираем все произольные значения с типом str
-    EAN = str(n_1) + str(n_2) + str(n_3) + str(n_4) + str(n_5) + str(n_6) + str(n_7)
+    EAN = f'{n_1}{n_2}{n_3}{n_4}{n_5}{n_6}{n_7}'
 
     # определяем ключ = n_8
     value_X = n_1 + n_3 + n_5 + n_7
