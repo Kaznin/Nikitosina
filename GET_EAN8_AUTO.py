@@ -1,5 +1,5 @@
+import random
 def get_ean_auto():
-    import random
     # от n_1 по n_7 определяем произвольные значения
     n_1 = random.randint(0, 9)
     n_2 = random.randint(0, 9)
@@ -24,6 +24,6 @@ def get_ean_auto():
         value_M
     n_8 = 10 - int(value_M)
 
-    return print(str(EAN) + str(n_8))
+    return str(EAN) + str(n_8)
 
 print(get_ean_auto())
